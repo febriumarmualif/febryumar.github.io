@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Febri Umar Mualif</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+    }
+    header {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: rgba(0,0,0,0.7);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00f2fe;
+    }
+    section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+    .foto {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #667eea;
+    }
+
+    .skill-box {
+      margin: 15px 0;
+    }
+
+    .skill-title {
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .skill-bar {
+      width: 100%;
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 12px;
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+      border-radius: 20px;
+      width: 0;
+      animation: fillAnim 2s forwards;
+    }
+
+    @keyframes fillAnim {
+      from { width: 0; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Febri Umar Mualif</h1>
+  <p>Mahasiswa S1 Sistem Informasi Universitas Komputama Majenang</p>
+</header>
+
+<nav>
+  <a href="#about">Tentang</a>
+  <a href="#skill">Skill</a>
+  <a href="#experience">Pengalaman</a>
+  <a href="#contact">Kontak</a>
+</nav>
+
+<section id="about">
+  <h2>Tentang Saya</h2>
+  <img src="foto saya.jpeg" alt="Foto Febry" class="foto">
+  <p>Saya adalah mahasiswa aktif Universitas Komputama Majenang dan saat ini bekerja sebagai staf BUMDes. Saya memiliki minat dalam bidang teknologi, pengembangan web, dan pengelolaan usaha desa.</p>
+</section>
+
+<section id="skill">
+  <h2>Skill</h2>
+
+  <div class="skill-box">
+    <div class="skill-title">HTML & CSS (50%)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+  </div>
+
+  <div class="skill-box">
+    <div class="skill-title">Microsoft Office (85%)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+  </div>
+
+  <div class="skill-box">
+    <div class="skill-title">Administrasi BUMDes (90%)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+  </div>
+
+  <div class="skill-box">
+    <div class="skill-title">Manajemen Data (75%)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+  </div>
+
+  <div class="skill-box">
+    <div class="skill-title">Desain Canva (50%%)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+  </div>
+
+</section>
+
+<section id="project">
+  <h2>Project</h2>
+  <ul>
+    <li><b>Website Portofolio</b> - Membuat website pribadi menggunakan HTML & CSS</li>
+    <li><b>Proposal BUMDes</b> - Menyusun proposal pengajuan dana usaha desa</li>
+    <li><b>RAB Usaha</b> - Membuat rencana anggaran biaya usaha BUMDes</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Pengalaman</h2>
+  <ul>
+    <li><b>Staf BUMDes</b><br>
+      - Mengelola administrasi dan pencatatan keuangan sederhana<br>
+      - Membantu operasional usaha desa (air galon, budidaya lele, dll)<br>
+      - Melayani kebutuhan masyarakat terkait layanan BUMDes
+    </li>
+    <br>
+    <li><b>Mahasiswa Universitas Komputama Majenang</b><br>
+      - Aktif dalam kegiatan akademik dan tugas proyek
+      - Membuat laporan dan presentasi
+    </li>
+    <br>
+    <li><b>Pengalaman Proyek</b><br>
+      - Membuat proposal usaha BUMDes
+      - Menyusun RAB (Rencana Anggaran Biaya)
+      - Membuat presentasi PowerPoint dan desain di Canva
+    </li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Kontak</h2>
+  <p>Email: febryumar001@gemail.com</p>
+  <p>WhatsApp: 08132637497</p>
+</section>
+
+<footer>
+  <p>© 2026 Febry Umar</p>
+</footer>
+
+
+<script>
+// Animasi saat scroll
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
